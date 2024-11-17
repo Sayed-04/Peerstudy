@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    padding-right: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.role-selection, .grade-selection {
+    margin-bottom: 10px;
+}
+
+.grade-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+button[type="button"] {
+    background-color: #e6e6e6;
+    color: black;
+    margin-top: 5px;
+}
+
+button[type="button"]:hover {
+    background-color: #ccc;
+}
+
+.subject-selection, .exam-selection {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subject-selection button, .exam-selection button {
+    background-color: #e6e6e6;
+    margin: 5px;
+}
+
+.subject-selection button:hover, .exam-selection button:hover {
+    background-color: #ccc;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 15px;
+    top: 130px; /* Adjust based on your input field position */
+}

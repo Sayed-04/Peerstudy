@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up, Login, and Peer Study</title>
+</head>
+<body>
+    <div class="container" id="signupContainer">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <div class="container" id="loginContainer" style="display: none;">
+        <h2>Ready to Study?</h2>
+        <form id="loginForm">
+            <label for="username">Username/Mobile No.</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" placeholder="Enter your password" required>
+            <button type="button" id="togglePassword">👁️</button>
+
+            <a href="#" class="forgot-password">Forgot Password?</a>
+
+            <button type="submit">Login</button>
+            <p>New user? <a href="#" id="showSignUp">Sign Up</a></p>
+        </form>
+    </div>
+
+    <div class="container" id="peerStudyContainer" style="display: none;">
+        <h2>Peer Study</h2>
+        <form id="peerStudyForm">
+            <label for="peerName">NAME:</label>
+            <input type="text" id="peerName" placeholder="Enter your name" required>
+
+            <label for="age">AGE:</label>
+            <input type="number" id="age" placeholder="Enter your age" required>
+
+            <label for="contact">CONTACT NO:</label>
+            <input type="tel" id="contact" placeholder="Enter your contact number" required>
+
+            <div class="role-selection">
+                <label>ROLE:</label>
+                <label><input type="radio" name="role" value="student" required> STUDENT</label>
+                <label><input type="radio" name="role" value="mentor"> MENTOR</label>
+            </div>
+
+            <label>GRADE:</label>
+            <div class="grade-selection">
+                <button type="button">GRADE 1-5</button>
+                <button type="button">GRADE 6-10</button>
+                <button type="button">GRADE 11</button>
+                <button type="button">GRADE 12</button>
+                <button type="button">OTHER</button>
+            </div>
+
+            <label for="reside">WHERE DO YOU RESIDE:</label>
+            <select id="reside">
+                <option value="">Click to select</option>
+                <option value="city1">City 1</option>
+                <option value="city2">City 2</option>
+                <option value="city3">City 3</option>
+                <option value="other">Other</option>
+            </select>
+
+            <button type="submit" id="nextBtn">NEXT</button>
+            <button type="button" id="exit">EXIT</button>
+        </form>
+    </div>
+
+    <div class="container" id="subjectSelectionContainer" style="display: none;">
+        <h2>Select Subjects</h2>
+        
+        <div class="subject-selection">
+            <button type="button">Physics</button>
+            <button type="button">Maths</button>
+            <button type="button">Chemistry</button>
+            <button type="button">Biology</button>
+        </div>
+
+        <h2>Choose Exam</h2>
+        <div class="exam-selection">
+            <button type="button">EAMCET</button>
+            <button type="button">JEE</button>
+            <button type="button">NEET</button>
+        </div>
+
+        <button type="submit" id="finishBtn">Finish</button>
+        <button type="button" id="backToPeerStudy">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
